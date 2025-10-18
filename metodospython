@@ -1,0 +1,58 @@
+#2. random – Números aleatorios (incluida)
+"""
+import random
+
+numero = random.randint(1, 100)
+print("Número aleatorio del 1 al 100:", numero)
+
+
+#3. datetime – Fechas y horas (incluida)
+from datetime import datetime
+
+ahora = datetime.now()
+print("Fecha y hora actual:", ahora.strftime("%d/%m/%Y %H:%M:%S"))
+
+# 4. 
+#Instalar con: pip install pandas
+import pandas
+datos = {
+    "Nombre": ["Ana", "Luis", "Carlos"],
+    "Edad": [23, 35, 29]
+}
+df = pandas.DataFrame(datos)
+df1= pandas.Series(datos)
+print(df)
+print(df1)
+
+
+#5. matplotlib – Graficar datos (requiere instalación)
+# Instalar con: pip install matplotlib
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 25, 30]
+
+plt.plot(x, y)
+plt.title("Gráfico de ejemplo")
+plt.xlabel("Eje X")
+plt.ylabel("Eje Y")
+plt.show()
+
+
+#6. tkinter – Interfaz gráfica simple (incluida)
+import tkinter
+
+ventana = tkinter.Tk()
+ventana.title("Hola Mundo")
+etiqueta = tkinter.Label(ventana, text="¡Bienvenido a Tkinter!")
+etiqueta.pack()
+ventana.mainloop()
+
+"""
+import math
+
+print(math.sqrt(16))  # Uso con prefijo
+
+"""     
+from math import sqrt
+print(sqrt(16))  # Sin prefijo"""
